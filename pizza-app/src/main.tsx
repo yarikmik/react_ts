@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client';
 
 import { RouterProvider, createBrowserRouter} from 'react-router-dom';
 import './index.css';
-import { Cart } from './components/pages/Cart/Cart.tsx';
-import { Menu } from './components/pages/Menu/Menu.tsx';
-import { Error } from './components/pages/Error/Error.tsx';
-import { Layout } from './layout/Menu/Menu.tsx';
+import { Cart } from './pages/Cart/Cart.tsx';
+import { Menu } from './pages/Menu/Menu.tsx';
+import { Error } from './pages/Error/Error.tsx';
+import { Layout } from './layout/Menu/Layout.tsx';
 
 const router = createBrowserRouter([
 	{
