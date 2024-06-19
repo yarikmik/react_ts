@@ -41,20 +41,20 @@ const router = createBrowserRouter([
 						})
 					});
 				}
+			}
+		]
+	},
+	{
+		path: '/auth',
+		element:<AuthLayout/>,
+		children: [
+			{
+				path: 'login',
+				element:<Login/>
 			},
 			{
-				path: '/auth',
-				element:<AuthLayout/>,
-				children: [
-					{
-						path: 'login',
-						element:<Login/>
-					},
-					{
-						path: 'register',
-						element:<Register/>
-					}
-				]
+				path: 'register',
+				element:<Register/>
 			}
 		]
 	},
