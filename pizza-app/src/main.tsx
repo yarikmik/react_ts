@@ -40,7 +40,7 @@ const router = createBrowserRouter([
 						data: new Promise((resolve, reject) => {
 							setTimeout(() => {
 								axios.get(`${PREFIX}/products/${params.id}`).then(data => resolve(data)).catch(e => reject(e));
-							}, 2000);
+							}, 500);
 						})
 					});
 				}
